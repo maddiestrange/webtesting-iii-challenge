@@ -8,7 +8,7 @@ describe("<Display />", () => {
     it('renders at all', () => {
         render(<Display />)
     });
-    it('initial state is open unlocked', () => {
+    it('initial state is open and unlocked', () => {
         const { getByText } = render(<Display />);
         expect(getByText('Unlocked'));
         expect(getByText('Open'));
